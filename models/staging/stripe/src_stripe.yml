@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+    - name: stripe
+      database: raw
+      schema: stripe
+      tables:
+        - name: payment
+          description: Payment data per Order
+          columns:
+            - name: orderid
+              description: Order ID
+              tests:
+                - not_null
+
