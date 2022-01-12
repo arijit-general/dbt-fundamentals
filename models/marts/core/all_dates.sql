@@ -1,4 +1,4 @@
-{{ config(materialized="table") }}
+{{ config(materialized="ephemeral") }}
 
     {{ dbt_utils.date_spine(
     datepart="day",
